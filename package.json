@@ -10,6 +10,22 @@
     "AI",
     "Programming Languages"
   ],
+  "keywords": [
+    "code",
+    "mcp",
+    "server",
+    "code runner",
+    "mcp-server"
+  ],
+  "bugs": {
+    "url": "https://github.com/formulahendry/vscode-code-runner-mcp-server/issues",
+    "email": "formulahendry@gmail.com"
+  },
+  "homepage": "https://github.com/formulahendry/vscode-code-runner-mcp-server/blob/main/README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/formulahendry/vscode-code-runner-mcp-server.git"
+  },
   "activationEvents": [
     "onStartupFinished"
   ],
