@@ -3,6 +3,7 @@
   "displayName": "Code Runner MCP Server",
   "description": "Code Runner MCP Server for running code snippet and show the result",
   "version": "0.1.0",
+  "publisher": "formulahendry",
   "engines": {
     "vscode": "^1.100.0"
   },
