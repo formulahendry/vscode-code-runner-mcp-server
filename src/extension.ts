@@ -4,13 +4,13 @@ import { setupMcpServer } from './mcpServer';
 export async function activate(context: vscode.ExtensionContext) {
 	console.log('Congratulations, your extension "code-runner-mcp-server" is now active!');
 
-	await setupMcpServer();
-
 	const disposable = vscode.commands.registerCommand('code-runner-mcp-server.helloWorld', async () => {
 		vscode.window.showInformationMessage('Hello World from Code Runner MCP Server!');
 	});
 
 	context.subscriptions.push(disposable);
+
+	await setupMcpServer();
 }
 
 export function deactivate() { }

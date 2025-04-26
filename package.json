@@ -2,7 +2,7 @@
   "name": "code-runner-mcp-server",
   "displayName": "Code Runner MCP Server",
   "description": "Code Runner MCP Server for running code snippet and show the result",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "icon": "images/logo.png",
   "publisher": "formulahendry",
   "engines": {

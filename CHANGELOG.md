@@ -1,3 +1,6 @@
+## 0.1.2 (2025-04-26)
+* Use fixed port to avoid starting multi servers 
+
 ## 0.1.1 (2025-04-26)
 * Add logo
 

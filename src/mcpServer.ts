@@ -1,7 +1,5 @@
 import * as vscode from "vscode";
-// const { startMcpServer } = await import('mcp-server-code-runner');
 import { startMcpServer } from "mcp-server-code-runner";
-import getPort from 'get-port';
 
 export async function setupMcpServer() {
     const mcpUrl = await startHttpMcpServer();
@@ -11,8 +9,7 @@ export async function setupMcpServer() {
 }
 
 async function startHttpMcpServer(): Promise<string | undefined> {
-    const port = await getPort({ port: 3090 });
-    const result = await startMcpServer("http", { port });
+    const result = await startMcpServer("http", { port: 3098 });
 
     return result ? result.url : undefined;
 }
