@@ -1,15 +1,18 @@
 {
   "name": "code-runner-mcp-server",
   "displayName": "Code Runner MCP Server",
-  "description": "Code Runner MCP Server",
-  "version": "0.0.1",
+  "description": "Code Runner MCP Server for running code snippet and show the result",
+  "version": "0.1.0",
   "engines": {
     "vscode": "^1.99.0"
   },
   "categories": [
-    "Other"
+    "AI",
+    "Programming Languages"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
@@ -28,14 +31,18 @@
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@types/vscode": "^1.99.0",
     "@types/mocha": "^10.0.10",
     "@types/node": "20.x",
+    "@types/vscode": "^1.99.0",
     "@typescript-eslint/eslint-plugin": "^8.28.0",
     "@typescript-eslint/parser": "^8.28.0",
-    "eslint": "^9.23.0",
-    "typescript": "^5.8.2",
     "@vscode/test-cli": "^0.0.10",
-    "@vscode/test-electron": "^2.4.1"
+    "@vscode/test-electron": "^2.4.1",
+    "eslint": "^9.23.0",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "get-port": "^7.1.0",
+    "mcp-server-code-runner": "^0.1.7"
   }
 }
