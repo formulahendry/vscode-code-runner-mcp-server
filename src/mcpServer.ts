@@ -5,7 +5,9 @@ import getPort from 'get-port';
 
 export async function setupMcpServer() {
     const mcpUrl = await startHttpMcpServer();
-    await updateMcpUrlToVsCodeSettings(mcpUrl!);
+    if (mcpUrl) {
+        await updateMcpUrlToVsCodeSettings(mcpUrl);
+    }
 }
 
 async function startHttpMcpServer(): Promise<string | undefined> {
