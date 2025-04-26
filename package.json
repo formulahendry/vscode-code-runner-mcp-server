@@ -4,7 +4,7 @@
   "description": "Code Runner MCP Server for running code snippet and show the result",
   "version": "0.1.0",
   "engines": {
-    "vscode": "^1.99.0"
+    "vscode": "^1.100.0"
   },
   "categories": [
     "AI",
