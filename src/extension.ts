@@ -10,7 +10,11 @@ export async function activate(context: vscode.ExtensionContext) {
 
 	context.subscriptions.push(disposable);
 
-	await setupMcpServer();
+	try {
+		await setupMcpServer();
+	} catch (error) {
+		console.error('Error setting up Code Runner MCP server: ', error);
+	}
 }
 
 export function deactivate() { }
